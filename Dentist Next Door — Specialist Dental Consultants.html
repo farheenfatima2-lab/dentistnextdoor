@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)file:///C:/Users/farhe/Downloads/dentist-next-door_1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dentist Next Door — Specialist Dental Consultants</title>
+  <link rel="stylesheet" href="./Dentist Next Door — Specialist Dental Consultants_files/tabler-icons.min.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1a1a1a; background: #fff; }
+    a { text-decoration: none; color: inherit; }
+
+    /* NAV */
+    nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2.5rem; height: 64px;
+      background: #fff;
+      border-bottom: 1px solid #e8edf2;
+      position: sticky; top: 0; z-index: 100;
+    }
+    .nav-logo { display: flex; align-items: center; gap: 10px; }
+    .nav-logo-icon {
+      width: 36px; height: 36px; border-radius: 8px;
+      background: #185FA5; display: flex; align-items: center; justify-content: center;
+      color: #fff; font-size: 18px;
+    }
+    .nav-logo-text { font-size: 16px; font-weight: 500; color: #1a1a1a; }
+    .nav-logo-text span { color: #185FA5; }
+    .nav-links { display: flex; gap: 2rem; font-size: 14px; color: #555; }
+    .nav-links a:hover { color: #185FA5; }
+    .nav-actions { display: flex; gap: 10px; align-items: center; }
+    .btn-outline {
+      font-size: 13px; padding: 7px 18px; border-radius: 8px;
+      border: 1px solid #ccc; background: transparent;
+      color: #1a1a1a; cursor: pointer;
+    }
+    .btn-outline:hover { background: #f5f5f5; }
+    .btn-primary {
+      font-size: 13px; padding: 7px 18px; border-radius: 8px;
+      background: #185FA5; color: #fff; border: none; cursor: pointer;
+    }
+    .btn-primary:hover { background: #0C447C; }
+
+    /* HERO */
+    .hero {
+      padding: 5rem 2.5rem 4rem;
+      background: #E6F1FB;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: #fff; border: 1px solid #B5D4F4; border-radius: 99px;
+      padding: 5px 14px; font-size: 12px; color: #185FA5; margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-size: 38px; font-weight: 500; line-height: 1.25;
+      color: #042C53; margin-bottom: 1rem; max-width: 680px; margin-inline: auto;
+    }
+    .hero h1 span { color: #185FA5; }
+    .hero p {
+      font-size: 16px; color: #185FA5; max-width: 480px; margin-inline: auto;
+      margin-bottom: 2rem; line-height: 1.6;
+    }
+    .hero-cta { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .hero-cta .btn-primary { padding: 10px 28px; font-size: 14px; }
+    .hero-cta .btn-outline { padding: 10px 28px; font-size: 14px; border-color: #185FA5; color: #185FA5; }
+    .hero-stats { display: flex; gap: 2rem; justify-content: center; margin-top: 3rem; flex-wrap: wrap; }
+    .hero-stat { text-align: center; }
+    .hero-stat .num { font-size: 26px; font-weight: 500; color: #185FA5; }
+    .hero-stat .lbl { font-size: 12px; color: #378ADD; margin-top: 2px; }
+
+    /* SECTIONS */
+    section { padding: 4rem 2.5rem; }
+    .section-label {
+      font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase;
+      color: #185FA5; margin-bottom: 0.5rem;
+    }
+    .section-title { font-size: 26px; font-weight: 500; color: #1a1a1a; margin-bottom: 0.75rem; }
+    .section-sub { font-size: 15px; color: #555; max-width: 500px; line-height: 1.6; }
+    .section-head { margin-bottom: 2.5rem; }
+    .centered { text-align: center; }
+    .centered .section-sub { margin-inline: auto; }
+
+    /* HOW IT WORKS */
+    .hiw-tabs { display: flex; gap: 8px; margin-bottom: 2rem; justify-content: center; }
+    .tab-btn {
+      padding: 8px 20px; border-radius: 99px; font-size: 13px; cursor: pointer;
+      border: 1px solid #ccc; background: transparent; color: #555;
+    }
+    .tab-btn.active { background: #185FA5; color: #fff; border-color: #185FA5; }
+    .hiw-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; }
+    .hiw-step {
+      background: #fff; border: 1px solid #e8edf2;
+      border-radius: 12px; padding: 1.25rem;
+    }
+    .hiw-step-num {
+      width: 32px; height: 32px; border-radius: 50%;
+      background: #E6F1FB; color: #185FA5;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px; font-weight: 500; margin-bottom: 12px;
+    }
+    .hiw-step h3 { font-size: 14px; font-weight: 500; margin-bottom: 6px; }
+    .hiw-step p { font-size: 13px; color: #666; line-height: 1.5; }
+    .hiw-step i { font-size: 20px; color: #185FA5; margin-bottom: 12px; display: block; }
+
+    /* SPECIALIZATIONS */
+    .specs-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; }
+    .spec-card {
+      background: #fff; border: 1px solid #e8edf2;
+      border-radius: 12px; padding: 1.25rem 1rem; text-align: center; cursor: pointer;
+      transition: border-color 0.15s;
+    }
+    .spec-card:hover { border-color: #185FA5; }
+    .spec-card i { font-size: 26px; color: #185FA5; margin-bottom: 10px; display: block; }
+    .spec-card .name { font-size: 13px; font-weight: 500; margin-bottom: 4px; }
+    .spec-card .count { font-size: 12px; color: #888; }
+
+    /* FOOTER */
+    footer { background: #042C53; color: #B5D4F4; padding: 3rem 2.5rem 1.5rem; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+    .footer-brand p { font-size: 13px; line-height: 1.6; color: #85B7EB; margin-top: 10px; }
+    .footer-col h4 { font-size: 13px; font-weight: 500; color: #E6F1FB; margin-bottom: 12px; }
+    .footer-col a { display: block; font-size: 13px; color: #85B7EB; margin-bottom: 8px; }
+    .footer-col a:hover { color: #E6F1FB; }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.1); padding-top: 1rem;
+      display: flex; justify-content: space-between; font-size: 12px; color: #378ADD;
+    }
+
+    @media (max-width: 768px) {
+      nav { padding: 0 1.25rem; }
+      .nav-links { display: none; }
+      .hero { padding: 3rem 1.25rem; }
+      .hero h1 { font-size: 26px; }
+      section { padding: 3rem 1.25rem; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      footer { padding: 2rem 1.25rem 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <div class="nav-logo-icon"><i class="ti ti-dental"></i></div>
+    <span class="nav-logo-text">Dentist <span>Next Door</span></span>
+  </div>
+  <div class="nav-links">
+    <a href="file:///C:/Users/farhe/Downloads/dentist-next-door_1.html#">Find dentists</a>
+    <a href="file:///C:/Users/farhe/Downloads/dentist-next-door_1.html#">For clinics</a>
+    <a href="file:///C:/Users/farhe/Downloads/dentist-next-door_1.html#">Specializations</a>
+    <a href="file:///C:/Users/farhe/Downloads/dentist-next-door_1.html#">Contact</a>
+  </div>
+  <div class="nav-actions">
+    <button class="btn-outline">Log in</button>
+    <button class="btn-primary">Get started</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">
+    <i class="ti ti-certificate"></i>
+    Verified consultant dentists only
+  </div>
+  <h1>The smartest way to find <span>specialist dental consultants</span></h1>
+  <p>Connect with board-certified dentists across every specialization — or list your clinic and hire on demand.</p>
+  <div class="hero-cta">
+    <button class="btn-primary">Find a consultant</button>
+    <button class="btn-outline">Join as a dentist</button>
+  </div>
+  <div class="hero-stats">
+    <div class="hero-stat"><div class="num">1,400+</div><div class="lbl">Verified consultants</div></div>
+    <div class="hero-stat"><div class="num">820+</div><div class="lbl">Partner clinics</div></div>
+    <div class="hero-stat"><div class="num">12</div><div class="lbl">Specializations</div></div>
+    <div class="hero-stat"><div class="num">98%</div><div class="lbl">Match satisfaction</div></div>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section>
+  <div class="section-head centered">
+    <div class="section-label">How it works</div>
+    <div class="section-title">Simple for both sides</div>
+    <div class="section-sub">Whether you run a clinic or are a specialist dentist, getting started takes minutes.</div>
+  </div>
+  <div class="hiw-tabs">
+    <button class="tab-btn active" onclick="switchTab(&#39;clinic&#39;, this)">For clinics</button>
+    <button class="tab-btn" onclick="switchTab(&#39;dentist&#39;, this)">For dentists</button>
+  </div>
+  <div class="hiw-steps" id="hiw-clinic">
+    <div class="hiw-step">
+      <div class="hiw-step-num">1</div>
+      <i class="ti ti-building-store"></i>
+      <h3>Create your clinic profile</h3>
+      <p>Add your clinic details, patient volume, and the type of consultant you need.</p>
+    </div>
+    <div class="hiw-step">
+      <div class="hiw-step-num">2</div>
+      <i class="ti ti-filters"></i>
+      <h3>Browse &amp; filter specialists</h3>
+      <p>Search by specialization, availability, location, and fees to find your best match.</p>
+    </div>
+    <div class="hiw-step">
+      <div class="hiw-step-num">3</div>
+      <i class="ti ti-calendar-event"></i>
+      <h3>Book a consultation slot</h3>
+      <p>Request a session directly from the dentist's calendar — no back-and-forth needed.</p>
+    </div>
+    <div class="hiw-step">
+      <div class="hiw-step-num">4</div>
+      <i class="ti ti-repeat"></i>
+      <h3>Collaborate on-demand</h3>
+      <p>Retain the same consultant or explore new ones as your clinic's needs grow.</p>
+    </div>
+  </div>
+  <div class="hiw-steps" id="hiw-dentist" style="display:none">
+    <div class="hiw-step">
+      <div class="hiw-step-num">1</div>
+      <i class="ti ti-user-check"></i>
+      <h3>Register &amp; get verified</h3>
+      <p>Submit your credentials, specialization, and registration number for quick verification.</p>
+    </div>
+    <div class="hiw-step">
+      <div class="hiw-step-num">2</div>
+      <i class="ti ti-id-badge"></i>
+      <h3>Build your profile</h3>
+      <p>Showcase your expertise, case portfolio, availability, and consultation fees.</p>
+    </div>
+    <div class="hiw-step">
+      <div class="hiw-step-num">3</div>
+      <i class="ti ti-send"></i>
+      <h3>Receive clinic requests</h3>
+      <p>Clinics discover you and send consultation requests directly to your inbox.</p>
+    </div>
+    <div class="hiw-step">
+      <div class="hiw-step-num">4</div>
+      <i class="ti ti-coin"></i>
+      <h3>Consult &amp; get paid</h3>
+      <p>Complete sessions and receive secure payouts — all managed on the platform.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SPECIALIZATIONS -->
+<section style="background: #f7f9fc;">
+  <div class="section-head centered">
+    <div class="section-label">Specializations</div>
+    <div class="section-title">Every dental specialty, one platform</div>
+    <div class="section-sub">Find consultants across all major dental specializations.</div>
+  </div>
+  <div class="specs-grid">
+    <div class="spec-card"><i class="ti ti-tooth"></i><div class="name">Orthodontics</div><div class="count">210 consultants</div></div>
+    <div class="spec-card"><i class="ti ti-activity"></i><div class="name">Endodontics</div><div class="count">175 consultants</div></div>
+    <div class="spec-card"><i class="ti ti-sparkles"></i><div class="name">Cosmetic dentistry</div><div class="count">198 consultants</div></div>
+    <div class="spec-card"><i class="ti ti-scalpel"></i><div class="name">Oral surgery</div><div class="count">143 consultants</div></div>
+    <div class="spec-card"><i class="ti ti-microscope"></i><div class="name">Periodontology</div><div class="count">120 consultants</div></div>
+    <div class="spec-card"><i class="ti ti-mood-kid"></i><div class="name">Pedodontics</div><div class="count">95 consultants</div></div>
+    <div class="spec-card"><i class="ti ti-device-tooth"></i><div class="name">Prosthodontics</div><div class="count">162 consultants</div></div>
+    <div class="spec-card"><i class="ti ti-scan"></i><div class="name">Oral radiology</div><div class="count">88 consultants</div></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div style="display:flex;align-items:center;gap:10px">
+        <div style="width:32px;height:32px;border-radius:8px;background:#185FA5;display:flex;align-items:center;justify-content:center;color:#fff;font-size:16px"><i class="ti ti-dental"></i></div>
+        <span style="font-size:15px;font-weight:500;color:#E6F1FB">Dentist Next Door</span>
+      </div>
+      <p>Connecting India's specialist dental consultants with clinics that need them — fast, verified, and on-demand.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Platform</h4>
+      <a href="file:///C:/Users/farhe/Downloads/dentist-next-door_1.html#">Find consultants</a>
+      <a href="file:///C:/Users/farhe/Downloads/dentist-next-door_1.html#">For dentists</a>
+      <a href="file:///C:/Users/farhe/Downloads/dentist-next-door_1.html#">Specializations</a>
+      <a href="file:///C:/Users/farhe/Downloads/dentist-next-door_1.html#">How it works</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="file:///C:/Users/farhe/Downloads/dentist-next-door_1.html#">About us</a>
+      <a href="file:///C:/Users/farhe/Downloads/dentist-next-door_1.html#">Blog</a>
+      <a href="file:///C:/Users/farhe/Downloads/dentist-next-door_1.html#">Careers</a>
+      <a href="file:///C:/Users/farhe/Downloads/dentist-next-door_1.html#">Press</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="file:///C:/Users/farhe/Downloads/dentist-next-door_1.html#">Help center</a>
+      <a href="file:///C:/Users/farhe/Downloads/dentist-next-door_1.html#">Contact us</a>
+      <a href="file:///C:/Users/farhe/Downloads/dentist-next-door_1.html#">Privacy policy</a>
+      <a href="file:///C:/Users/farhe/Downloads/dentist-next-door_1.html#">Terms of service</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Dentist Next Door. All rights reserved.</span>
+    <span>Made for India's dental community</span>
+  </div>
+</footer>
+
+<script>
+  function switchTab(type, el) {
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    el.classList.add('active');
+    document.getElementById('hiw-clinic').style.display = type === 'clinic' ? 'grid' : 'none';
+    document.getElementById('hiw-dentist').style.display = type === 'dentist' ? 'grid' : 'none';
+  }
+</script>
+
+
+</body></html>
